@@ -106,7 +106,7 @@ img{
     
     .allinone{
         flex-direction: column;
-        height: 45vh;
+        height: 55vh;
         background-color: white;
         gap:1rem;
     }
