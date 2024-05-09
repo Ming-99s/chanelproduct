@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap'); 
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid; 
+    place-content: center;
+    height: 100vh;
+    place-content: center;
+    background-color: rgb(248, 237, 222);
+}
+.allinone{
+    display: flex;
+    background-color: white;
+    height: 50vh;
+    max-width: 700px;
+    border-radius: 10px;
+}
+.product-text-side{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    
+
+}
+img{
+    border-top-left-radius:10px ;
+    border-bottom-left-radius: 10px;
+}
+.product-title{
+    font-size: 1.2rem;
+    text-transform:uppercase ;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 4px;
+    color: rgb(108, 105, 105);
+}
+.product-name{
+    font-size: 3rem;  
+    font-family: "Fraunces", serif;
+    line-height: 4rem;
+}
+.product-sub{
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: rgb(108, 105, 105);
+}
+.product-price{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+.price-after{
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    color: rgb(62, 148, 92);
+
+}
+.price-before{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-decoration: line-through;
+    color: rgb(108, 105, 105);
+}
+.shop{
+    border :none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    height: 3.5rem;
+    width: 20rem;
+    background-color: rgb(62, 148, 92);
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    cursor:pointer;
+    transition: 0.2s;
+    
+}
+.text{
+    color: white;
+}
+.shop:hover{
+    background-color: rgb(115, 181, 119);
+    
+}
+.link{
+    text-decoration: none;
+}
+.icon{
+    height: 25px;
+    width: 25px;
+}
+
+
+@media only screen and (max-width:600px){
+    body{
+        padding: 1rem 1rem
+        
+        
+    }
+    .allinone{
+        flex-direction: column;
+        height: 85vh;
+        gap:1rem;
+    }
+    img{
+        height: 50%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    } 
+    .product-name{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        text-align: center;
+    }  
+    img{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+    .shop{
+        width: 25rem;
+    }
+    .product-sub{
+        font-size: 1rem;
+        line-height:1.8rem ;
+        text-align: center;
+    }
+    .product-price{
+        justify-content: center;
+    }
+    .product-title{
+        text-align: center;
+    }
+}
